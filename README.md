@@ -40,8 +40,8 @@ This test script will:
 - Perform inversion using default parameters
 
 - Output the inverted layer thicknesses 、shear wave velocities and so on
-  Expected output: The script should execute without errors,and store in table form in a folder.
-  # Inversion Workflow
+Expected output: The script should execute without errors,and store in table form in a folder.
+# Inversion Workflow
 1. Parameter Configuration
 Before running the inversion, you need to set the following parameters according to your specific requirements:
 `    vp=[521 860 650 1327];
