@@ -30,7 +30,7 @@ cd SCSO`
 2. Add to MATLAB Path
 Open MATLAB and run the following command in the command window:
 `addpath(genpath('full/path/to/SCSO'));
-savepath;  % Optional: save path settings for future sessions`
+savepath; `
 # Test with Synthetic Data
 Run the following command to test the code with the provided synthetic data:`test_synthetic`
 This test script will:
@@ -40,6 +40,7 @@ This test script will:
 - Perform inversion using default parameters
 
 - Output the inverted layer thicknesses 、shear wave velocities and so on
+
 Expected output: The script should execute without errors,and store in table form in a folder.
 # Inversion Workflow
 1. Parameter Configuration
