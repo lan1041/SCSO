@@ -23,7 +23,7 @@ Statistics and Machine Learning Toolbox (essential)
 
 Optimization Toolbox (recommended, but not required)
 
-#Installation and Setup
+# Installation and Setup
 1. Download the Code
  `git clone (https://github.com/lan1041/SCSO)
 cd SCSO`
@@ -40,4 +40,7 @@ This test script will:
 - Perform inversion using default parameters
 
 - Output the inverted layer thicknesses and shear wave velocities
-Expected output: The script should execute without errors.
+  Expected output: The script should execute without errors.
+  # Inversion Workflow
+1. Parameter Configuration
+Before running the inversion, you need to set the following parameters according to your specific requirements:
