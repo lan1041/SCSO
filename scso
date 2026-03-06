@@ -1,0 +1,22 @@
+clc;
+clear;
+close all;
+tic;
+tn=1;
+nnn=10;
+while(tn<=nnn)
+    %% 1.模型建立
+    vp=[521 860 650 1327];
+    thk=[2 3 4];
+    density=[2000 2000 2000 2000];
+    vs=[160 250 200 400];
+    vsl=length(vs);
+    thkl=length(thk);
+    interval=2;
+    frequency=(5:interval:100);
+    Frel=length(frequency);
+    %% 2.频散曲线计算-得到标准曲线
+    vr_real=mmat(thk,density,vp,vs,frequency,'R');%正演获得相速度
+    Vvv=vr_real+2*(0.5-rand(size(vr_real))).*vr_real*0.1;
+    vr_real=Vvv;
+    %%
