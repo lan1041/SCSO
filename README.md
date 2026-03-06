@@ -27,3 +27,7 @@ Optimization Toolbox (recommended, but not required)
 1. Download the Code
 git clone https://github.com/yourusername/SCSO.git
 cd SCSO
+2. Add to MATLAB Path
+Open MATLAB and run the following command in the command window:
+addpath(genpath('full/path/to/SCSO'));
+savepath;  % Optional: save path settings for future sessions
