@@ -39,8 +39,21 @@ This test script will:
 
 - Perform inversion using default parameters
 
-- Output the inverted layer thicknesses and shear wave velocities
-  Expected output: The script should execute without errors.
+- Output the inverted layer thicknesses 、shear wave velocities and so on
+  Expected output: The script should execute without errors,and store in table form in a folder.
   # Inversion Workflow
 1. Parameter Configuration
 Before running the inversion, you need to set the following parameters according to your specific requirements:
+`    vp=[521 860 650 1327];
+    thk=[2 3 4];
+    density=[2000 2000 2000 2000];
+    vs=[160 250 200 400];`
+   You can modify those parameters on demand:vp,thk, density,vs.
+   2. Running the algorithm
+   3. Obtaining inversion results
+After inversion, you can extract the following results:`    xlswrite('fitbest.xlsx', fit_best,'sheet1',str);
+    xlswrite('vs.xlsx', vs_best,'sheet1',str);
+    xlswrite('thk.xlsx', depth_best,'sheet1',str);
+    xlswrite('fr_best.xlsx', fr_best,'sheet1',str);`
+4. Plotting in Origin
+You can import the exported text files into Origin for professional publication-quality figures to evaluate the feasibility of the algorithm.
