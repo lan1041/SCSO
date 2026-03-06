@@ -25,9 +25,19 @@ Optimization Toolbox (recommended, but not required)
 
 #Installation and Setup
 1. Download the Code
- `git clone https://github.com/yourusername/SCSO.git`
-cd SCSO
+ `git clone (https://github.com/lan1041/SCSO)
+cd SCSO`
 2. Add to MATLAB Path
 Open MATLAB and run the following command in the command window:
 `addpath(genpath('full/path/to/SCSO'));
 savepath;  % Optional: save path settings for future sessions`
+# Test with Synthetic Data
+Run the following command to test the code with the provided synthetic data:`test_synthetic`
+This test script will:
+
+- Load the synthetic  data:`test_synthetic`
+
+- Perform inversion using default parameters
+
+- Output the inverted layer thicknesses and shear wave velocities
+Expected output: The script should execute without errors.
